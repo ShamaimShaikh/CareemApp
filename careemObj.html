@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<script>
+
+/*
+var user = {
+	cars : ("bike", "auto", "mini"),
+	carFares : {bike: 10, auto: 20, mini: 30 },
+
+
+	bookCar: function ()
+	{
+		 console.log("select from cars available :\n 1. bike\n 2. auto\n 3. mini\n");
+		 console.log("give the option number of cars");		 
+		 var input = prompt("Enter your car ride"); 
+		 var inputCar = Number(input);
+		 		 
+		 if(inputCar == 1)
+		 	{
+			 	console.log("Ride of "+ cars[inputCar-1] + "is booked!" );
+		 		console.log("Ride fare is: "+ carFares[inputCar-1].value); //to be asked to sir
+		 	}
+		 
+		}
+	
+	};
+	
+	console.log(user.bookCar());
+	*/
+	
+	// above whole block is to be asked // prblm in indexing arrays
+	
+	
+	var user = {
+
+		carFares : {bike: 100, auto: 200, mini: 300 },
+		
+		bookCar: function()
+		{
+			console.log("book your ride by entering numbers of cars");
+			console.log("available cars are: \n 1. bike\n 2. auto\n 3. mini\n");
+			var input = prompt("Enter car number");
+			
+			if(Number(input) == 1){
+				console.log("you've booked Bike");
+				console.log("car Fare is Rs " + user.carFares.bike);
+			}
+			
+			else if(Number(input) == 2){
+				console.log("you've booked Auto");
+				console.log("car Fare is Rs " + user.carFares.auto);
+			}
+			
+			else if(Number(input) == 3){
+				console.log("you've booked mini");
+				console.log("car Fare is Rs " + user.carFares.mini);
+			}
+			
+			else{
+					console.log("Invalid input");
+				}
+		}
+	
+	
+	};
+
+ console.log(user.bookCar());
+ 
+
+</script>
+
+</body>
+</html>
